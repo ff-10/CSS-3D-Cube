@@ -1,5 +1,5 @@
-#CSS 3D Cube
+# CSS 3D Cube
 
-##Features:
+## Features:
 - You can rotate Cube with left,right,top,bottom ok buttons
 - Change backface-visibility
