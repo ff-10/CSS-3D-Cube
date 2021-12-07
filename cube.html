@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+	<!-- Responsive settings -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<title>CSS 3D Cube</title>
+	<link rel="stylesheet" type="text/css" href="./css/cube.css">
+
+</head>
+<body>
+<!-- Container class all content inside-->
+<div class="container">
+	<!-- Cube and sides -->
+	<div class="cube">
+		<div class="side front">FRONT</div>
+		<div class="side back">BACK</div>
+		<div class="side right">RIGHT</div>
+		<div class="side left">LEFT</div>
+		<div class="side top">TOP</div>
+		<div class="side bottom">BOTTOM</div>
+	</div>
+</div>
+
+<!-- Include JavaScript Code -->
+<script src="./js/engine.js"></script>
+
+<!-- backface-visibility, switcher.-->
+
+<div class="backface" align="center">
+	<p class="backface_status">backface-visibility: hidden;</p>
+
+	<label>visible: <input type="radio" name="radio" onclick="$switch(true)"></label>
+
+	&nbsp;
+
+	<label>hidden: <input type="radio" name="radio" checked onclick="$switch(false)"></label>
+</div>
+</body>
+</html>
