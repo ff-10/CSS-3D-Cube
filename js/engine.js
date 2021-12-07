@@ -4,7 +4,7 @@
 	var rotateY = 0,
 	 	  rotateX = 0;
 
- // keydown eventhandler
+    // keydown eventhandler
 	 	document.onkeydown = function (e) {
 
 	 		if (e.keyCode === 37/*LEFT*/) rotateY -= 5
