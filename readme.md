@@ -1,8 +1,8 @@
 # CSS 3D Cube
 
 ## Features:
-- You can rotate Cube with ⇦ ⇨, ⇧ ⇩ Arrows
-- Change backface-visibility
+- Rotate Cube with ⇦ ⇨, ⇧ ⇩ Arrows
+- Change CSS backface-visibility property
 
 
 Codepen: https://codepen.io/fatali/pen/jOLgZeo
