@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<title>CSS 3D Cube</title>
+	<link rel="stylesheet" type="text/css" href="./cube.css">
+
+	<noscript>
+		<style>
+			.no_js{
+				display: block;
+				width: 100%;
+				height: auto;
+				color: white;
+				background-color: #c22e32;
+				padding: 10px;
+				font-weight: bold;
+				text-align: center;
+				font-size: 20px;
+			}
+			
+		</style>
+	</noscript>
+</head>
+<body>
+
+<div class="no_js"> Please Enable Javascript! </div>
+
+
+<div class="custom__alert__body">
+	<div class="custom__alert__close" onclick="closeAlert()">
+		&times;
+	</div>
+	<div class="custom__alert__content">
+		
+	</div>
+</div>
+
+<div class="container">
+	<div class="cube">
+		<div class="side front"></div>
+		<div class="side back"></div>
+		<div class="side right"></div>
+		<div class="side left"></div>
+		<div class="side top"></div>
+		<div class="side bottom"></div>
+	</div>
+</div>
+
+<script src="./cube.js"></script>
+
+<div class="controls" align="center">
+	<div class="backface">
+		<p class="backface_status">backface-visibility: visible;</p>
+
+		<label>visible: <input type="radio" name="backface" checked onclick="$switch(true)"></label>
+
+		&nbsp;
+
+		<label>hidden: <input type="radio" name="backface" onclick="$switch(false)"></label>
+	</div>
+	<hr>
+
+	
+	<div class="rotate_container">
+		<p>Auto Rotate:</p>
+		<br>
+		Auto Rotate On: <input type="radio" name="rotate" onclick="ENABLE_AUTO_ROTATION()">
+		&nbsp;
+		Auto Rotate Off: <input type="radio" name="rotate"
+		checked onclick="DISABLE_AUTO_ROTATION()">
+	</div>
+
+	<hr>
+	<button type="button" class="assembly_btn" onclick="disAssembly()">Disassembly and Assembly Cube</button>
+</div>
+</body>
+</html>
