@@ -156,8 +156,6 @@ hr{
 	bottom: 1px;
 	width: 100%;
 	height: 100%;
-	outline: 3px solid green;
-	outline-offset: calc(10px * 2);
 }
 
 
