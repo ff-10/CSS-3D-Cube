@@ -1,9 +1,3 @@
-____
-
-(https://github.com/ff-10/CSS-3D-Cube/cover.png)
-____
-
-
 ### CSS 3D Cube
 
 #### Features:
