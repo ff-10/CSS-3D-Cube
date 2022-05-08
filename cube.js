@@ -1,27 +1,24 @@
 (function () {
-
-	//define values
-	let rotateY = 0,
-	 	  rotateX = 0;
-
-    // keydown eventhandler
+	let rotateY = 0, rotateX = 0;
+	
 	 	document.onkeydown = function (e) {
-
 	 		if (e.keyCode === 37/*LEFT*/) rotateY -= 5
 	 		else if (e.keyCode === 38/*TOP*/) rotateX += 5
 	 		else if (e.keyCode === 39/*RIGHT*/) rotateY += 5
 	 		else if (e.keyCode === 40/*BOTTOM*/) rotateX -= 5
-
-	 		//Add degrees to transform:;
+			
 	 		document.querySelector('.cube').style.transform =
 	 		'rotateY(' + rotateY + 'deg)'+'rotateX(' + rotateX + 'deg)';
 
 	 	}
 })();
 
+let sides = Array.from(document.querySelectorAll('.side'));
+let backfaceStatus = document.querySelector('.backface_status');
+
 function $switch(isOpen){
-	let sides = Array.from(document.querySelectorAll('.side'));
-	let backfaceStatus = document.querySelector('.backface_status');
+	
+	
 
 	if (isOpen){
 		for (let i = 0; i < sides.length; i++){
