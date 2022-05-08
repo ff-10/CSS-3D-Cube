@@ -79,6 +79,7 @@ const DISABLE_AUTO_ROTATION = function(){
 }
 
 const disAssembly = function(){
+	let sides = Array.from(document.querySelectorAll('.side'));
 	const disAssemblyTime = 3300;
 	for (let i = 0; i < sides.length; i++){
 		sides[i].style.animationName = "disAssembly";
@@ -87,6 +88,7 @@ const disAssembly = function(){
 }
 
 const assembly = function() {
+	let sides = Array.from(document.querySelectorAll('.side'));
 	for (let i = 0; i < sides.length; i++){
 		sides[i].style.animationName = "";
 	}	
