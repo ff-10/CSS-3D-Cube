@@ -1,6 +1,6 @@
 ### CSS 3D Cube(HTML+CSS+JS)
 
-##### Preview: ![Preview Image](https://github.com/ff-10/CSS-3D-Cube/master/cover.png?raw=true)
+##### Preview: ![Preview Image](https://github.com/ff-10/CSS-3D-Cube/blob/master/cover.png?raw=true)
 
 #### Features:
 - Rotate Cube with ⇦ ⇨, ⇧ ⇩ Arrows
