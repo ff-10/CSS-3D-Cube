@@ -6,10 +6,8 @@
 	 		else if (e.keyCode === 38/*TOP*/) rotateX += 5
 	 		else if (e.keyCode === 39/*RIGHT*/) rotateY += 5
 	 		else if (e.keyCode === 40/*BOTTOM*/) rotateX -= 5
-			
-	 		document.querySelector('.cube').style.transform =
-	 		'rotateY(' + rotateY + 'deg)'+'rotateX(' + rotateX + 'deg)';
-
+		
+	 		document.querySelector('.cube').style.transform = `rotateY(${rotateY}deg) rotateX(${rotateX}deg)`;
 	 	}
 })();
 
