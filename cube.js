@@ -15,9 +15,6 @@ let sides = Array.from(document.querySelectorAll('.side'));
 let backfaceStatus = document.querySelector('.backface_status');
 
 function $switch(isOpen){
-	
-	
-
 	if (isOpen){
 		for (let i = 0; i < sides.length; i++){
 			sides[i].style.backfaceVisibility = "visible";
@@ -40,43 +37,42 @@ const alertContent = document.querySelector('.custom__alert__content');
 alertTextContent = "No Warning.";
 alertContent.innerHTML = alertTextContent;
 
-const openAlert = function(){
+const openAlert = () => {
 	alertBody.style.display = "block";
 	alertContent.innerHTML = alertTextContent;
-	return;
 }
 
-const closeAlert = function(){
+const closeAlert = () => {
 	alertBody.style.display =  "none";
 	alertContent.innerHTML = null;
-	return;
 }
 
 let inClick = 0;
 const CUBE_BODY = document.querySelector('.cube');
 
-const ENABLE_AUTO_ROTATION = function(){	
+const ENABLE_AUTO_ROTATION = () => {	
 	inClick++;
 	CUBE_BODY.classList.add('auto_rotate');
-	if(CUBE_BODY.classList.contains("auto_rotate") && inClick > 1){
-		alertTextContent = "Auto rotation already enabled";
+	
+	if(CUBE_BODY.classList.contains("auto_rotate") && inClick >= 1){
+		alertTextContent = "Auto rotation already enabled.";
 		alertContent.innerHTML = alertTextContent;
 		openAlert();
 	}
 }
 
 
-const DISABLE_AUTO_ROTATION = function(){
+const DISABLE_AUTO_ROTATION = () => {
 	if(!CUBE_BODY.classList.contains("auto_rotate")){
 		alertTextContent = "Auto rotation already disabled";
 		alertContent.innerHTML = alertTextContent;
 		openAlert();
-		return;
 	}
+	
 	CUBE_BODY.classList.remove('auto_rotate');
 }
 
-const disAssembly = function(){
+const disAssembly = () => {
 	let sides = Array.from(document.querySelectorAll('.side'));
 	const disAssemblyTime = 3300;
 	for (let i = 0; i < sides.length; i++){
@@ -85,7 +81,7 @@ const disAssembly = function(){
 	setTimeout(assembly, disAssemblyTime);
 }
 
-const assembly = function() {
+const assembly = () => {
 	let sides = Array.from(document.querySelectorAll('.side'));
 	for (let i = 0; i < sides.length; i++){
 		sides[i].style.animationName = "";
